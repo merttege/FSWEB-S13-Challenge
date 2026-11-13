@@ -4,9 +4,9 @@ public enum Plan {
     BASIC("Basic", 10);
 
     private String name;
-    private double price;
+    private int price;
 
-    private Plan(String name, double price){
+    private Plan(String name, int price){
         this.name = name;
         this.price = price;
     }
@@ -15,7 +15,7 @@ public enum Plan {
         return name;
     }
 
-    public double getPrice(){
+    public int getPrice(){
         return price;
     }
 }
